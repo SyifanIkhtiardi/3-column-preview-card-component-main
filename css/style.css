@@ -51,7 +51,7 @@ body {
     margin-bottom: 30px;
 }
 
-.header-style {
+h1 {
     font-family: 'Big Shoulders Display', cursive;;
     font-weight: 700;
     font-size: 30px;
@@ -110,7 +110,7 @@ p {
     p {
         margin-bottom: 100px;
     }
-    .header-style {
+    h1 {
         font-size: 40px;
     }
 }
