@@ -21,11 +21,15 @@ body {
     padding: 60px 20px;
     font-family: "Lexend Deca", sans-serif;
     font-size: 15px;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .card {
     border-radius: 10px;
     overflow: hidden;
+    min-width: 335px;
 }
 
 .sedans {
@@ -67,7 +71,9 @@ p {
 }
 .a-style:hover {
     cursor: pointer;
-    opacity: 0.8;
+    background-color: inherit;
+    border: 3px solid var(--very-light-gray);
+    color: var(--very-light-gray);
 }
 
 .sedans a {
@@ -83,4 +89,28 @@ p {
 .attribution {
     margin-top: 20px;
     text-align: center;
+}
+
+@media (min-width: 376px) {
+    article {
+        max-width: 335px;
+    }
+}
+
+@media (min-width: 1008px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        font-size: 16px;
+    }
+    .card {
+        display: flex;
+        flex-direction: row;
+    }
+    p {
+        margin-bottom: 100px;
+    }
+    .header-style {
+        font-size: 40px;
+    }
 }
